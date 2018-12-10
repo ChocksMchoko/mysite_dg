@@ -5,6 +5,13 @@
     <title>My Title</title>
 </head>
 <body>
+{% for post in posts %}
+    <div>
+        <p>publishe: {{post.published_date}}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr}}</p>
+    </div>
+{% endfor %}
 <p> Testing, attention please!</p>
 
 </body>
